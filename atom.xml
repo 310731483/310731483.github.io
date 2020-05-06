@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-04-30T03:26:15.586Z</updated>
+  <updated>2020-05-06T05:17:49.647Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序屏幕高度</title>
+    <link href="http://yoursite.com/2020/05/06/Untitled/"/>
+    <id>http://yoursite.com/2020/05/06/Untitled/</id>
+    <published>2020-05-06T05:02:43.000Z</published>
+    <updated>2020-05-06T05:17:49.647Z</updated>
+    
+    <content type="html"><![CDATA[<p>屏幕中的元素组成<br><img src="/2020/05/06/Untitled/管理HEXO——hexo-admin/20190703145541682.png" alt="图片"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let systemInfo = wx.getSystemInfoSync()</span><br><span class="line">// px转换到rpx的比例</span><br><span class="line">let pxToRpxScale = 750 / systemInfo.windowWidth;</span><br><span class="line">// 状态栏的高度</span><br><span class="line">let ktxStatusHeight = systemInfo.statusBarHeight * pxToRpxScale</span><br><span class="line">// 导航栏的高度</span><br><span class="line">let navigationHeight = 44 * pxToRpxScale</span><br><span class="line">// window的宽度</span><br><span class="line">let ktxWindowWidth = systemInfo.windowWidth * pxToRpxScale</span><br><span class="line">// window的高度</span><br><span class="line">let ktxWindowHeight = systemInfo.windowHeight * pxToRpxScale</span><br><span class="line">// 屏幕的高度</span><br><span class="line">let ktxScreentHeight = systemInfo.screenHeight * pxToRpxScale</span><br><span class="line">// 底部tabBar的高度</span><br><span class="line">let tabBarHeight = ktxScreentHeight - ktxStatusHeight - navigationHeight - ktxWindowHeight</span><br></pre></td></tr></table></figure></p><p>小程序中有时候需要获取屏幕高度使用，简单的通过wx.getSystemInfo即可获取到手机的系统信息</p><p>wx.getSystemInfo中有3个高度，分别是：<br>screenHeight：屏幕高度；<br>windowHeight：窗口高度；<br>statusBarHeight：状态栏高度；</p><p>对于小程序来说屏幕的高度 = 状态栏高度 + 导航栏高度 + 窗口高度 + 标签栏高度</p><p>在不含有tabbar标签栏的页面中屏幕可使用高度的获取有两种方式</p><p>1、windowHeight窗口高度 + tabbar标签栏高度</p><p>2、screenHeight屏幕高度 -  statusBarHeight状态栏高度 - 导航栏高度</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;屏幕中的元素组成&lt;br&gt;&lt;img src=&quot;/2020/05/06/Untitled/管理HEXO——hexo-admin/20190703145541682.png&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>git打标签</title>
