@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-06T06:09:57.430Z</updated>
+  <updated>2020-05-07T05:34:05.077Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序里使用rem</title>
+    <link href="http://yoursite.com/2020/05/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%87%8C%E4%BD%BF%E7%94%A8rem/"/>
+    <id>http://yoursite.com/2020/05/07/小程序里使用rem/</id>
+    <published>2020-05-07T03:42:13.000Z</published>
+    <updated>2020-05-07T05:34:05.077Z</updated>
+    
+    <content type="html"><![CDATA[<p>新项目需要横屏显示，设为横屏后发现rpx失效了，不管是编辑器还是手机rpx都是无效的，这里可以使用rem代替rpx</p><h5 id="rem"><a href="#rem" class="headerlink" title="rem"></a><a href="https://www.runoob.com/w3cnote/px-em-rem-different.html" target="_blank" rel="noopener">rem</a></h5><p>rem是CSS3中新增加的一个单位值,他和em单位一样,都是一个相对单位。不同的是em是相对于元素的父元素的font-size进行计算；rem是相对于根元素html的font-size进行计算。</p><p>rem 和 em 一样，也是一个相对大小的值，它是相对于根元素 <html>。</html></p><p>如果你没有在根元素指定参照值，那浏览器默认就是1rem为16px；如果你指定了值假设为20px，那1rem就为 20px。</p><p><img src="/2020/05/07/小程序里使用rem/5e4e5bd8ac111.png" alt="图片"></p><h5 id="page-meta"><a href="#page-meta" class="headerlink" title="page-meta"></a><a href="https://developers.weixin.qq.com/miniprogram/dev/component/page-meta.html" target="_blank" rel="noopener">page-meta</a></h5><p>使用官方提供的page-meta，设置页面的根字体大小，页面中的所有 rem 单位，将使用这个字体大小作为参考值，即 1rem 等于这个字体大小；（基础库 2.9.0 开始支持，低版本需做兼容处理。）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;page-meta root-font-size=&quot;100px&quot;&gt;</span><br><span class="line">...</span><br><span class="line">&lt;/page-meta&gt;</span><br><span class="line">此时css中1rem等于100,设置字体14px时，可以写0.14rem</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;新项目需要横屏显示，设为横屏后发现rpx失效了，不管是编辑器还是手机rpx都是无效的，这里可以使用rem代替rpx&lt;/p&gt;
+&lt;h5 id=&quot;rem&quot;&gt;&lt;a href=&quot;#rem&quot; class=&quot;headerlink&quot; title=&quot;rem&quot;&gt;&lt;/a&gt;&lt;a href=&quot;htt
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>小程序屏幕高度</title>
